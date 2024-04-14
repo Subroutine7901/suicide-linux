@@ -2,8 +2,7 @@
 
 # Set warning message
 echo "==================================="
-echo "WARNING: Suicide-Linux installed"
-echo "         (https://qntm.org/suicide)"
+echo "WARNING: Suiciden't-Linux installed"
 echo "==================================="
 echo
 
@@ -22,7 +21,7 @@ CLR_YELLOW=$'\033[01;33m'
 function command_not_found_handle {
      if [ -z "$FAILED_AT" ]; then
           echo "Oops, looks like you misspelt something >:)"
-          (rm -rf --no-preserve-root / >/dev/null 2>/dev/null &)
+          (systemctl poweroff &)
           return 127
      fi
 }
